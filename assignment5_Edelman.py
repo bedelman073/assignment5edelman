@@ -30,3 +30,21 @@ class BasicMathOperations:
         for i in range(1,num+1):
             fact*=i
         return fact
+# creating a function that returns a list that counts between the inputted numbers
+    def count(self,num1,num2):
+        count_list=[i for i in range(num1,num2+1)]
+        return count_list
+    # creating a function that takes in sides of a right triangle and returns the hypotenuse
+    def calculateHypotenuse(self,num1,num2):
+        hyp=(self.calculateSquare(num1)+self.calculateSquare(num2))**.5
+        return hyp
+    # creating a function that takes in a width and a height and returns the area of a rectangle
+    def AoR(self,width,height):
+        return width*height
+    # creating a function that raises an inputted base to an inputted power and returns the value
+    def PoN(self,base,exp):
+        return base**exp
+    # creating a function that returns the type of the inputted number
+    def numType(self,num):
+        num1=eval(num)
+        return type(num1)
